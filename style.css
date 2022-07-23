@@ -43,6 +43,7 @@ body {
     position: absolute;
     top: 50px;
     left: 50px;
+    width: auto;
 }
 
 .logo img {
@@ -91,4 +92,32 @@ p {
     height: 20px;
     width: 20px;
     margin-right: 10px;
+}
+
+.right-side {
+    padding: 20px 40px;
+}
+
+@media screen and (max-width: 820px) {
+    .mobile-none {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .right-side {
+        padding: 0;
+    }
+
+    .centered {
+        position: relative;
+        top: initial;
+        transform: initial;
+        padding: 0 15px;
+    }
+
+    .black-background {
+        padding: 30px 5px;
+        margin: 0;
+    }
 }
